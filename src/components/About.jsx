@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import portfolioImg from '../assets/portfolio-picture.jpg';
 
 const About = () => {
     return (
@@ -34,12 +35,14 @@ const About = () => {
                     </p>
                 </div>
 
-                <div className="relative group">
-                    <div className="absolute inset-0 bg-biolum-cyan/20 rounded-md translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300 border border-biolum-cyan"></div>
-                    <div className="absolute inset-0 bg-navy-light rounded-md group-hover:bg-transparent transition-colors duration-300 z-10 mix-blend-multiply"></div>
-                    {/* Placeholder for profile image if user adds one later, currently a stylized box */}
-                    <div className="relative z-20 w-full h-full min-h-[250px] bg-[#112240] rounded-md flex items-center justify-center border border-slate-700 overflow-hidden">
-                        <span className="text-6xl">🧬</span>
+                <div className="relative group w-full h-full min-h-[250px]">
+                    <div className="absolute top-4 left-4 w-full h-full rounded-md border-2 border-biolum-cyan/50 z-0 transition-transform duration-300 group-hover:top-3 group-hover:left-3"></div>
+                    <div className="relative z-10 w-full h-full rounded-md overflow-hidden bg-navy-light">
+                        <img
+                            src={portfolioImg}
+                            alt="Profile"
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
                     </div>
                 </div>
             </div>

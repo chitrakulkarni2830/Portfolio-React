@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const skills = {
-    "Core Languages": ["Python", "SQL", "R"],
+    "Core Languages": ["Python", "SQL"],
     "Data Science": ["Pandas", "NumPy", "Scikit-Learn", "SciPy"],
     "Visualization": ["Tableau", "Matplotlib", "Seaborn", "Streamlit"],
     "Bioinformatics": ["Biopython", "Genomics", "Pymol"],

@@ -16,20 +16,20 @@ const Contact = () => {
                 </p>
 
                 <a
-                    href="mailto:contact@example.com"
+                    href="mailto:kulkarnichitra2002@gmail.com"
                     className="inline-block px-10 py-4 text-sm font-mono text-biolum-cyan border border-biolum-cyan rounded hover:bg-biolum-cyan/10 transition-colors duration-300 mb-20"
                 >
                     Send Signal
                 </a>
 
                 <div className="flex justify-center space-x-8 text-slate-400">
-                    <a href="#" className="hover:text-biolum-cyan hover:-translate-y-1 transition-all">
+                    <a href="https://github.com/chitrakulkarni2830" target="_blank" rel="noopener noreferrer" className="hover:text-biolum-cyan hover:-translate-y-1 transition-all">
                         <Github size={24} />
                     </a>
-                    <a href="#" className="hover:text-biolum-cyan hover:-translate-y-1 transition-all">
+                    <a href="https://www.linkedin.com/in/chitra-kulkarni-21642123a/" target="_blank" rel="noopener noreferrer" className="hover:text-biolum-cyan hover:-translate-y-1 transition-all">
                         <Linkedin size={24} />
                     </a>
-                    <a href="#" className="hover:text-biolum-cyan hover:-translate-y-1 transition-all">
+                    <a href="mailto:kulkarnichitra2002@gmail.com" className="hover:text-biolum-cyan hover:-translate-y-1 transition-all">
                         <Mail size={24} />
                     </a>
                 </div>

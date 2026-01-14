@@ -32,7 +32,7 @@ const Hero = () => {
                 className="max-w-xl text-slate-400 text-lg mb-8 leading-relaxed"
             >
                 <p>
-                    MSc Biochemistry Graduate from Ramnarain Ruia College turned Data Analyst.
+                    My name is Chitra Kulkarni and I am a MSc Biochemistry Graduate from Ramnarain Ruia Autonomous College turned Data Analyst.
                     I decode complex biological data into actionable insights using Python, SQL, and Tableau.
                 </p>
             </motion.div>
