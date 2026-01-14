@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import DNAAnimation from './DNAAnimation';
 
 
 const Background = () => {
@@ -36,26 +37,7 @@ const Background = () => {
             {/* DNA Helix Representation (Abstract) */}
 
             {/* DNA Helix Representation (Abstract) */}
-            <svg className="absolute right-0 top-1/4 h-[800px] w-[200px] opacity-10" viewBox="0 0 100 800">
-                <motion.path
-                    d="M50 0 Q 90 100 50 200 T 50 400 T 50 600 T 50 800"
-                    fill="none"
-                    stroke="#64ffda"
-                    strokeWidth="2"
-                    initial={{ pathLength: 0 }}
-                    animate={{ pathLength: 1 }}
-                    transition={{ duration: 5, ease: "easeInOut" }}
-                />
-                <motion.path
-                    d="M50 0 Q 10 100 50 200 T 50 400 T 50 600 T 50 800"
-                    fill="none"
-                    stroke="#0ea5e9"
-                    strokeWidth="2"
-                    initial={{ pathLength: 0 }}
-                    animate={{ pathLength: 1 }}
-                    transition={{ duration: 5, ease: "easeInOut", delay: 0.5 }}
-                />
-            </svg>
+            <DNAAnimation />
         </div>
     );
 };
