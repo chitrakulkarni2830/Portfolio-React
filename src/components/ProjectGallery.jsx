@@ -26,7 +26,7 @@ const featuredProjects = [
         ),
         techs: ["Python", "SQL", "Tableau", "Pandas", "Matplotlib"],
         links: { github: "https://github.com/chitrakulkarni2830/TrialTrace-Global" },
-        image: "/projects/clinical_trials.png",
+        image: `${import.meta.env.BASE_URL}projects/clinical_trials.png`,
         color: "#64ffda" // Teal
     },
     {
@@ -49,7 +49,7 @@ const featuredProjects = [
         ),
         techs: ["Python", "RDKit", "SQLite", "PubChem API", "Pandas", "Tableau"],
         links: { github: "https://github.com/chitrakulkarni2830/docking-data-pipeline" },
-        image: "/projects/virtual_screening.png",
+        image: `${import.meta.env.BASE_URL}projects/virtual_screening.png`,
         color: "#d946ef" // Fuchsia/Pink
     },
     {
@@ -72,7 +72,7 @@ const featuredProjects = [
         ),
         techs: ["Python", "Scikit-Learn", "Pandas", "Random Forest", "Tableau"],
         links: { github: "https://github.com/chitrakulkarni2830/ProtStable-Analytics" },
-        image: "/projects/protein_stability.png",
+        image: `${import.meta.env.BASE_URL}projects/protein_stability.png`,
         color: "#f97316" // Orange
     }
 ];
