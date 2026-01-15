@@ -1,16 +1,13 @@
-import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 
-const FeaturedProjectCard = ({ title, techs, description, extendedDescription, links, image, index, color = "#64ffda" }) => {
-    const [isExpanded, setIsExpanded] = useState(false);
-
+const FeaturedProjectCard = ({ title, techs, description, extendedDescription, links, image, index, isExpanded, onToggle, color = "#64ffda" }) => {
     return (
         <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.15 }}
-            className="col-span-1 group relative rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden flex flex-col"
+            className="col-span-1 group relative rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden flex flex-col min-h-[550px]"
             style={{
                 '--accent-color': color
             }}
@@ -72,7 +69,7 @@ const FeaturedProjectCard = ({ title, techs, description, extendedDescription, l
                         </AnimatePresence>
 
                         <button
-                            onClick={() => setIsExpanded(!isExpanded)}
+                            onClick={onToggle}
                             className="flex items-center gap-1 mt-2 text-sm font-medium transition-colors hover:underline decoration-[color:var(--accent-color)] underline-offset-4"
                             style={{ color: color }}
                         >

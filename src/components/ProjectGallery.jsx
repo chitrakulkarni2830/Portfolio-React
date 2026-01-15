@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import FeaturedProjectCard from './FeaturedProjectCard';
 
@@ -110,6 +111,8 @@ const otherProjects = [
 ];
 
 const ProjectGallery = () => {
+    const [expandedIndex, setExpandedIndex] = useState(null);
+
     return (
         <>
             <section id="projects" className="py-20 px-8 md:px-24 max-w-7xl mx-auto">
@@ -122,9 +125,15 @@ const ProjectGallery = () => {
                     <div className="h-[1px] bg-slate-700 flex-grow max-w-xs"></div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
                     {featuredProjects.map((project, index) => (
-                        <FeaturedProjectCard key={index} {...project} index={index} />
+                        <FeaturedProjectCard
+                            key={index}
+                            {...project}
+                            index={index}
+                            isExpanded={expandedIndex === index}
+                            onToggle={() => setExpandedIndex(expandedIndex === index ? null : index)}
+                        />
                     ))}
                 </div>
             </section>
