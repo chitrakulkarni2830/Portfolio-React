@@ -125,7 +125,7 @@ const ProjectGallery = () => {
                     <div className="h-[1px] bg-slate-700 flex-grow max-w-xs"></div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+                <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ${expandedIndex !== null ? 'items-start' : ''}`}>
                     {featuredProjects.map((project, index) => (
                         <FeaturedProjectCard
                             key={index}
