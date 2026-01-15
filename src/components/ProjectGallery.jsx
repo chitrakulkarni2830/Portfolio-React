@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import FeaturedProjectCard from './FeaturedProjectCard';
+import clinicalTrialsImg from '../assets/projects/clinical_trials.png';
+import virtualScreeningImg from '../assets/projects/virtual_screening.png';
+import proteinStabilityImg from '../assets/projects/protein_stability.png';
 
 const featuredProjects = [
     {
@@ -26,7 +29,7 @@ const featuredProjects = [
         ),
         techs: ["Python", "SQL", "Tableau", "Pandas", "Matplotlib"],
         links: { github: "https://github.com/chitrakulkarni2830/TrialTrace-Global" },
-        image: `${import.meta.env.BASE_URL}projects/clinical_trials.png`,
+        image: clinicalTrialsImg,
         color: "#64ffda" // Teal
     },
     {
@@ -49,7 +52,7 @@ const featuredProjects = [
         ),
         techs: ["Python", "RDKit", "SQLite", "PubChem API", "Pandas", "Tableau"],
         links: { github: "https://github.com/chitrakulkarni2830/docking-data-pipeline" },
-        image: `${import.meta.env.BASE_URL}projects/virtual_screening.png`,
+        image: virtualScreeningImg,
         color: "#d946ef" // Fuchsia/Pink
     },
     {
@@ -72,7 +75,7 @@ const featuredProjects = [
         ),
         techs: ["Python", "Scikit-Learn", "Pandas", "Random Forest", "Tableau"],
         links: { github: "https://github.com/chitrakulkarni2830/ProtStable-Analytics" },
-        image: `${import.meta.env.BASE_URL}projects/protein_stability.png`,
+        image: proteinStabilityImg,
         color: "#f97316" // Orange
     }
 ];
